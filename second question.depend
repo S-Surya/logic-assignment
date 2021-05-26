@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1540400375 source:e:\logic in c++\second question\main.cpp
+	<iostream>
+	<string.h>
+	<time.h>
+	"premise.h"
+	"andintroduction.h"
+	"andelimination.h"
+	"orintroduction.h"
+	"implicationelimination.h"
+	"modustollens.h"
+
+1540359503 e:\logic in c++\second question\premise.h
+	<iostream>
+	<string.h>
+
+1540363125 e:\logic in c++\second question\andintroduction.h
+	<iostream>
+	<string.h>
+
+1540363123 e:\logic in c++\second question\andelimination.h
+	<iostream>
+	<string.h>
+
+1540363965 e:\logic in c++\second question\orintroduction.h
+	<iostream>
+	<string.h>
+
+1540363546 e:\logic in c++\second question\implicationelimination.h
+	<iostream>
+	<string.h>
+
+1540363894 e:\logic in c++\second question\modustollens.h
+	<iostream>
+	<string.h>
+

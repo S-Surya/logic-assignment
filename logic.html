@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	
+<html>
+<body>
+<h1 style ="text-align:center">Logic Assignment</h1>
+<h2>Team Members:</h2>
+<pre>
+	1.Bukka Sukesh                     ID:2017A7PS0008H
+	2.Balabhadruni Venkata Abhijeeth   ID:2017A7PS0026H
+	3.Sornapudi Surya Sidhartha	   ID:2017A7PS0200H
+</Pre>
+<p><b> Symbols used are: </b></p>
+<p>	1. ~ for negation <br>
+	2. V for OR <br>
+	3. ^ for AND <br>
+	4. > for implication.<br> 
+	</p>
+<h2>First Question:</h2>
+<h4>Instructions to follow while giving input:</h4>
+<pre>   1.If NEGATION is present in the propositional formulae it should be written as (~p).
+   2.If OR is present in the propositional formulae it should be written as (pVq).
+   3.If AND is present in the propositional formulae it should be written as (p^q).
+   4.If IMPLICATION is present in the propositional formulae it should be written as (p>q).
+  </pre>
+<h4>Assumptions:</h4>
+<pre>   1.The whole propositional formula is well formed and fully parenthesized.
+   2.The whole propositional formulae should be entered only in one line.
+   3.The input to this program should be a propositional logical formula in infix notation.
+</pre>
+<h4>Test Cases:</h4>
+<pre>Test case 1:<br>
+	(~((~q)^(~(~p))))<br>
+	Memory used: 440 bytes.
+	Time taken For running:0.002<br><br>
+
+Test case 2:<br>
+	(((p>q)^((~q)Vs))V(p>s))<br>
+	Memory used: 587 bytes.
+	Time taken For running:0.002<br><br>
+	
+
+Test case 3:<br>
+	((~(~((~(((~(p^q))Vq)^m))>l)))Vp)<br>
+	Memory used: 776 bytes.
+	Time taken For running:0.003<br>
+</pre>
+<h2>Second Question:</h2>
+<h4>Instructions to follow while giving input:</h4>
+<pre>     1.First line: n (number of statements)
+     2.Next n lines: <statement>/<rule>/line1/line2(existence of line1 and line2 will be dependent on the rule)
+     3.The rules should be entered in the following manner:
+		1. P (representing premise)
+		2. ^i/line1/line2 (representing and introduction)
+		3. ^en1/line1 (representing and elimination, here n1 is 1 or 2 depending on the proof we want) 
+		4. Vin1/line1 (representing or introduction, here n1 is 1 or 2 depending on the proof we want)
+		5. >e/line1/line2 (representing implication elimination)
+		6. MT/line1/line2 (representing modus tollens)
+</pre>
+<h4>Assumptions:</h4>
+<pre>	 1. Line number starts from 1. 
+	 2. <statement> should be perfectly parenthesized, 
+		e.g. ((a ∧ b) ∧ c) is valid, (a ∧ b) ∧ c is invalid, ((a ∧ b)) is invalid, (a ∧ b) is valid, (a ∧ b ∧ c) is invalid, p is valid, (p) is invalid. 
+	 3. ¬ can be succeeded by a literal or ‘(‘ only. 
+</pre>
+<h4>Test Cases:</h4>
+<pre>Test case 1:
+
+	9
+	((p>q)^(h>r))/P
+	(~r)/P
+	p/P
+	(h>r)/^e2/1
+	(~h)/MT/4/2
+	(p>q)/^e1/1
+	q/>e/6/3
+	(pVq)/Vi2/7
+	(p^q)/^i/3/7
+	Memory used: 684 bytes.
+	Time taken for running:0.001
+
+Test case 2:
+
+	8
+	(t>(p^(q^(r>s))))/P
+	t/P
+	(p^(q^(r>s)))/>e/1/2
+	(q^(r>s))/^e2/3
+	(r>s)/^e2/4
+	(~s)/P
+	(~r)/MT/5/6
+	((~r)V(~(~(k>t))))/Vi1/7
+	Memory used: 868 bytes.
+	Time taken for running:0.001
+</pre>
+</body>
+</html>
